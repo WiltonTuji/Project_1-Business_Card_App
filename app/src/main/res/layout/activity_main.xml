@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.project1_wiltontuji.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/chinese" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fundada em 1989, conta com um vasto menú de pratos tradicionais chineses. Venha desfrutar um tempo tranquilo com sua família e amigos, enquanto degusta deliciosos pratos."
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logotel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/descricao"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/telefone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logotel"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/logotel"
+        android:text="(11) 3333-3333"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logosite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/logotel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/www" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logosite"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/logosite"
+        android:text="www.site_domain.com"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logoemail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/logosite"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logoemail"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/logoemail"
+        android:text="email_domain@email.com"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logomapa"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/logoemail"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/mapa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logomapa"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/logomapa"
+        android:text="Rua Endereço, 100 - Bairro"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/logorelogio"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/logomapa"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/relogio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logorelogio"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/logorelogio"
+        android:text="De quarta a domingo, das 18:00 até 23:00"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logorelogio"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:text=" Confira o cardárpio "
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:text=" Faça já sua reserva! "
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
